@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffffff"
+                android:fitsSystemWindows="true">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:background="#ffffff"
+                    android:orientation="vertical">
+
+
+                    <TableLayout
+                        android:id="@+id/tabla_cuerpo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:padding="7dp">
+
+
+                        <ir.tahasystem.music.app.custom.TextViewNumLight style="@style/Text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/cell_shape_gray"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="@string/buy_info"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="#fff"></ir.tahasystem.music.app.custom.TextViewNumLight>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ir.tahasystem.music.app.custom.TextViewNumLight style="@style/Text"
+                                android:id="@+id/lastDateOrder"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/cell_shape"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:textAppearance="?android:attr/textAppearanceSmall"></ir.tahasystem.music.app.custom.TextViewNumLight>
+
+                            <ir.tahasystem.music.app.custom.TextViewNumLight style="@style/Text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/cell_shape"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:text="@string/lastDateOrder"
+                                android:textAppearance="?android:attr/textAppearanceSmall"></ir.tahasystem.music.app.custom.TextViewNumLight>
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ir.tahasystem.music.app.custom.TextViewNumLight style="@style/Text"
+                                android:id="@+id/lastOrderPrice"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/cell_shape"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:textAppearance="?android:attr/textAppearanceSmall"></ir.tahasystem.music.app.custom.TextViewNumLight>
+
+                            <ir.tahasystem.music.app.custom.TextViewNumLight style="@style/Text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/cell_shape"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:text="@string/lastOrderPrice"
+                                android:textAppearance="?android:attr/textAppearanceSmall"></ir.tahasystem.music.app.custom.TextViewNumLight>
+                        </TableRow>
+
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ir.tahasystem.music.app.custom.TextViewNumLight style="@style/Text"
+                                android:id="@+id/sumOrderPriceLastMounth"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/cell_shape"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:textAppearance="?android:attr/textAppearanceSmall"></ir.tahasystem.music.app.custom.TextViewNumLight>
+
+                            <ir.tahasystem.music.app.custom.TextViewNumLight style="@style/Text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/cell_shape"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:text="@string/sumOrderPriceLastMounth"
+
+                                android:textAppearance="?android:attr/textAppearanceSmall"></ir.tahasystem.music.app.custom.TextViewNumLight>
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ir.tahasystem.music.app.custom.TextViewNumLight style="@style/Text"
+                                android:id="@+id/sumOrderPriceUpToNow"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/cell_shape"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:textAppearance="?android:attr/textAppearanceSmall"></ir.tahasystem.music.app.custom.TextViewNumLight>
+
+                            <ir.tahasystem.music.app.custom.TextViewNumLight style="@style/Text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/cell_shape"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:text="@string/sumOrderPriceUpToNow"
+
+                                android:textAppearance="?android:attr/textAppearanceSmall"></ir.tahasystem.music.app.custom.TextViewNumLight>
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ir.tahasystem.music.app.custom.TextViewNumLight style="@style/Text"
+                                android:id="@+id/systemSharjAmount"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/cell_shape"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:textAppearance="?android:attr/textAppearanceSmall"></ir.tahasystem.music.app.custom.TextViewNumLight>
+
+                            <ir.tahasystem.music.app.custom.TextViewNumLight style="@style/Text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/cell_shape"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:text="@string/systemSharjAmount"
+
+                                android:textAppearance="?android:attr/textAppearanceSmall"></ir.tahasystem.music.app.custom.TextViewNumLight>
+                        </TableRow>
+
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ir.tahasystem.music.app.custom.TextViewNumLight style="@style/Text"
+                                android:id="@+id/introduceCount"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/cell_shape"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:textAppearance="?android:attr/textAppearanceSmall"></ir.tahasystem.music.app.custom.TextViewNumLight>
+
+                            <ir.tahasystem.music.app.custom.TextViewNumLight style="@style/Text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/cell_shape"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:text="@string/introduceCount"
+
+                                android:textAppearance="?android:attr/textAppearanceSmall"></ir.tahasystem.music.app.custom.TextViewNumLight>
+                        </TableRow>
+
+                        <ir.tahasystem.music.app.custom.ButtonBold style="@style/Text"
+                            android:id="@+id/buy_details"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_gravity="bottom"
+                            android:layout_margin="20dp"
+                            android:layout_weight="40"
+                            android:background="@drawable/bg_btn_selector"
+                            android:drawableRight="@drawable/newspaper"
+                            android:padding="2dp"
+                            android:text="@string/buy_lists"
+                            android:textColor="#fff"
+                            android:textSize="14sp" />
+
+                    </TableLayout>
+
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/no_server_response"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#ffffff"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="30dp"
+                        android:background="#ffffff"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_signal_cellular_connected_no_internet_2_bar_black_24dp" />
+
+                        <ir.tahasystem.music.app.custom.TextViewBold style="@style/Text"
+                            android:id="@+id/value"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="10dp"
+                            android:cursorVisible="true"
+                            android:ellipsize="start"
+                            android:gravity="center"
+                            android:text="@string/server_not_response"
+                            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+
+                        <ir.tahasystem.music.app.custom.ButtonBold style="@style/Text"
+                            android:id="@+id/no_server_response_retry"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_gravity="center"
+                            android:layout_margin="20dp"
+                            android:background="@drawable/bg_btn_selector"
+                            android:drawableRight="@drawable/ic_refresh_white_24dp"
+                            android:ellipsize="end"
+                            android:gravity="center"
+                            android:padding="3dp"
+                            android:text="@string/retry"
+                            android:textColor="#fff"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </FrameLayout>
+
+
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+    <com.gc.materialdesign.views.ProgressBarIndeterminate
+        android:id="@+id/list_load"
+        android:layout_width="fill_parent"
+        android:layout_height="5dp"
+        android:layout_gravity="top"
+        android:background="@color/color_primary" />
+</RelativeLayout>

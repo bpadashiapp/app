@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fbutton="http://schemas.android.com/apk/res-auto"
+    xmlns:materialdesign="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="30dp"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/reg2"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="30dp"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ir.tahasystem.music.app.custom.TextViewBold style="@style/Text"
+            android:id="@+id/no_res"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:ellipsize="start"
+            android:enabled="false"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textSize="15sp"/>
+
+
+        <ir.tahasystem.music.app.custom.ButtonBold style="@style/Text"
+            android:id="@+id/btn2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:background="@drawable/bg_btn_selector"
+            android:drawableLeft="@drawable/ic_payment_white_24dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:padding="7dp"
+            android:text="@string/viewed"
+            android:textColor="#fff"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/reg"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="30dp"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+
+        <ir.tahasystem.music.app.custom.EditTextLight  style="@style/Text"
+            android:background="@drawable/bg_edt_selector"
+            android:id="@+id/code"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="1dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="1dp"
+            android:cursorVisible="true"
+            android:ellipsize="start"
+            android:gravity="center"
+            android:hint="@string/mobile_to_active"
+            android:inputType="number"
+            android:lines="1"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textCursorDrawable="@null"
+ />
+
+
+        <ir.tahasystem.music.app.custom.ButtonBold style="@style/Text"
+            android:id="@+id/btn"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_btn_selector"
+            android:drawableLeft="@drawable/key"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:padding="7dp"
+            android:text="@string/active"
+            android:textColor="#fff"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+        <com.gc.materialdesign.views.ProgressBarCircularIndeterminate
+            android:visibility="gone"
+            android:id="@+id/progress"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:background="@color/color_primary" />
+
+</FrameLayout>

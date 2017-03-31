@@ -1,0 +1,55 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        onlinefood {
+            keyAlias 'onlinefood'
+            keyPassword 'onlinefood'
+            storeFile file('/home/bpadashi/online.keystore')
+            storePassword 'onlinefood'
+        }
+    }
+    compileSdkVersion 23
+    buildToolsVersion "23.0.3"
+    lintOptions {
+        abortOnError false
+    }
+    defaultConfig {
+applicationId "ir.shahre_narmafzar"
+        minSdkVersion 14
+        targetSdkVersion 20
+versionCode 80
+versionName '80'
+        signingConfig signingConfigs.onlinefood
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.onlinefood
+        }
+        debug {
+            signingConfig signingConfigs.onlinefood
+            debuggable true
+        }
+    }
+    sourceSets {
+        main {
+            aidl.srcDirs = ['src/main/java']
+        }
+    }
+    productFlavors {
+    }
+}
+
+dependencies {
+    compile project(':picasso-2.5.2')
+    compile project(':supertoasts')
+    compile project(':ksoap2-android-assembly-2.5.4-jar-with-dependencies')
+    compile project(':TreeViewLib')
+    compile project(':libraryAnims')
+    compile 'com.google.code.gson:gson:2.2.4'
+    compile 'com.google.android.gms:play-services-maps:8.4.0'
+    compile project(':cropper')
+    compile project(':imageResizer')
+}

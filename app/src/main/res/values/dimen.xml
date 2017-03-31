@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="tabsHeight">48dp</dimen>
+    <dimen name="fab_margin">5dp</dimen>
+    <dimen name="slider_h">200dp</dimen>
+    <dimen name="tabsHeight_home">53dp</dimen>
+    <dimen name="fontSize_home_name">12sp</dimen>
+    <dimen name="fontSize_home_des">10sp</dimen>
+    <dimen name="fontSize_home_price">12sp</dimen>
+    <dimen name="fontSize_home_d_price">10sp</dimen>
+    <dimen name="spacing_xsmall">2dp</dimen>
+    <dimen name="spacing_medium">5dp</dimen>
+    <dimen name="spacing_large">16dp</dimen>
+    <dimen name="spacing_xlarge">32dp</dimen>
+    <dimen name="elevation_low">9dp</dimen>
+    <dimen name="elevation_high">12dp</dimen>
+    <dimen name="status_bar_height">25dp</dimen>
+    <dimen name="actionBarSize">48dp</dimen>
+
+    <dimen name="slidingmenu_offset">60dp</dimen>
+    <dimen name="list_padding">10dp</dimen>
+    <dimen name="shadow_width">15dp</dimen>
+
+</resources>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+<color name="color_primary">#a79ecd</color>
+<color name="color_primary_trans">#cca79ecd</color>
+<color name="color_primary_nav">#008bcc</color>
+<color name="color_primary_light">#cca79ecd</color>
+    <color name="color_shadow">#44000000</color>
+    <color name="drawerArrowColor">#ffffff</color>
+    <color name="bg_array">#f9f5f5</color>
+    <color name="apptheme_color">#33b5e5</color>
+    <color name="color_t_gray">#ffffff</color>
+    <color name="text_lgray">#808080</color>
+    <color name="text_gray">#323232</color>
+    <color name="color_hint">#fff</color>
+
+
+</resources>

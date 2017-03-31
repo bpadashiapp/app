@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fbutton="http://schemas.android.com/apk/res-auto"
+    xmlns:materialdesign="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_margin="30dp"
+    android:background="#00ffffff">
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/reg2"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="30dp"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ir.tahasystem.music.app.custom.TextViewBold
+                android:id="@+id/no_res"
+                style="@style/Text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:ellipsize="start"
+                android:enabled="false"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+
+
+            <ir.tahasystem.music.app.custom.ButtonBold
+                android:id="@+id/btn2"
+                style="@style/Text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center"
+                android:layout_margin="20dp"
+                android:background="@drawable/bg_btn_selector"
+                android:drawableLeft="@drawable/ic_payment_white_24dp"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:padding="7dp"
+                android:text="@string/viewed"
+                android:textColor="#fff"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/reg"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <ImageView
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/ic_launcher" />
+
+
+            <LinearLayout
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:background="@drawable/edt_btn2"
+                android:gravity="right"
+                android:textColor="#fff"
+                android:textColorHint="#fff"
+                android:theme="@style/TextLabel">
+
+
+                <ir.tahasystem.music.app.custom.EditTextLight
+                    android:id="@+id/user"
+                    style="@style/Text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="100"
+                    android:background="@null"
+                    android:cursorVisible="true"
+                    android:ellipsize="start"
+                    android:gravity="center|right"
+                    android:hint="@string/username"
+                    android:inputType="text"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:paddingTop="6dp"
+                    android:singleLine="true"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#fff"
+                    android:textCursorDrawable="@null" />
+
+                <ImageView
+                    android:layout_margin="3dp"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_person_outline_white_48dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:background="@drawable/edt_btn2"
+                android:gravity="right"
+                android:textColor="#fff"
+                android:textColorHint="#fff"
+                android:theme="@style/TextLabel">
+
+                <ir.tahasystem.music.app.custom.EditTextLight
+                    android:id="@+id/pass"
+                    style="@style/Text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="100"
+                    android:background="@null"
+                    android:cursorVisible="true"
+                    android:ellipsize="start"
+                    android:gravity="center|right"
+                    android:hint="@string/password"
+                    android:inputType="textPassword"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:paddingTop="6dp"
+                    android:singleLine="true"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#fff"
+                    android:textCursorDrawable="@null" />
+
+                <ImageView
+                    android:layout_margin="3dp"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/key" />
+            </LinearLayout>
+
+            <ir.tahasystem.music.app.custom.ButtonBold
+                android:id="@+id/btn"
+                style="@style/Text"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_btn_selector"
+                android:drawableLeft="@drawable/ic_lock_white_24dp"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:padding="7dp"
+                android:text="@string/login"
+                android:textColor="#fff"
+                android:textStyle="bold" />
+
+            <ir.tahasystem.music.app.custom.ButtonBold
+                android:id="@+id/btn_rem"
+                style="@style/Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:background="@null"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/remind_password"
+                android:textColor="@color/primary"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+        <com.gc.materialdesign.views.ProgressBarCircularIndeterminate
+            android:id="@+id/progress"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:background="@color/color_primary"
+            android:visibility="gone" />
+
+    </FrameLayout>
+</ScrollView>

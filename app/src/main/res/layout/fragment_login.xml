@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:fitsSystemWindows="true">
+
+
+    <ir.tahasystem.music.app.custom.ButtonBold style="@style/Text"
+        android:id="@+id/login"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="7dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/bg_btn_selector"
+        android:drawableRight="@drawable/ic_vpn_key_white_24dp"
+        android:padding="5dp"
+        android:text="@string/login"
+        android:textColor="#fff"
+        android:textSize="20sp" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/login"
+        android:layout_alignParentTop="true"
+        android:layout_margin="20dp"
+        android:fillViewport="true">
+
+
+        <LinearLayout
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/login_email"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:cursorVisible="true"
+                android:ellipsize="start"
+                android:gravity="left"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress"
+                android:lines="1"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textCursorDrawable="@null"
+/>
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/login_password"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:cursorVisible="true"
+                android:ellipsize="start"
+                android:gravity="left"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:lines="1"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textCursorDrawable="@null"
+ />
+
+            <ir.tahasystem.music.app.custom.ButtonBold style="@style/Text"
+                android:id="@+id/remember"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="#00ffffff"
+                android:gravity="center"
+                android:padding="7dp"
+                android:text="@string/forget_pass"
+                android:textColor="#808080"
+                android:textSize="12sp" />
+
+
+            <ir.tahasystem.music.app.custom.CustomCheckBox android:textColor="#808080" android:theme="@style/checkBoxStyle"
+                android:id="@+id/save_pass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:checked="false"
+                android:text="@string/save_pass"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:visibility="gone" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <FrameLayout
+        android:id="@+id/no_server_response"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="30dp"
+            android:background="#ffffff"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_signal_cellular_connected_no_internet_2_bar_black_24dp" />
+
+            <ir.tahasystem.music.app.custom.TextViewBold style="@style/Text"
+                android:id="@+id/value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:cursorVisible="true"
+                android:ellipsize="start"
+                android:gravity="center"
+                android:text="@string/server_not_response"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+            <ir.tahasystem.music.app.custom.ButtonBold style="@style/Text"
+                android:id="@+id/no_server_response_retry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center"
+                android:layout_margin="20dp"
+                android:background="@drawable/bg_btn_selector"
+                android:drawableRight="@drawable/ic_refresh_white_24dp"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:padding="3dp"
+                android:text="@string/retry"
+                android:textColor="#fff"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+    </FrameLayout>
+
+
+    <com.gc.materialdesign.views.ProgressBarIndeterminate
+        android:id="@+id/list_load"
+        android:layout_width="fill_parent"
+        android:layout_height="5dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/color_primary" />
+
+</RelativeLayout>

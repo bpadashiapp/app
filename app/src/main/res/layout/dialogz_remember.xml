@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fbutton="http://schemas.android.com/apk/res-auto"
+    xmlns:materialdesign="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:layout_margin="20dp" >
+
+    <android.support.design.widget.TextInputLayout android:theme="@style/TextLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:background="@drawable/edt_btn2"
+        android:gravity="right"
+        android:textColor="#fff"
+        android:textColorHint="#fff">
+
+        <ir.tahasystem.music.app.custom.EditTextLight style="@style/Text"
+            android:id="@+id/value"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:cursorVisible="true"
+            android:textColor="#fff"
+            android:ellipsize="end"
+            android:gravity="right"
+            android:hint="@string/enter_mobile_email"
+            android:lines="1"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:layout_marginTop="5dp"
+            android:background="@null"
+            android:paddingLeft="20dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textCursorDrawable="@null"
+            />
+    </android.support.design.widget.TextInputLayout>
+
+
+
+        <ir.tahasystem.music.app.custom.ButtonBold style="@style/Text"
+            android:id="@+id/buy_r"
+            android:layout_margin="20dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_btn_selector"
+            android:drawableLeft="@drawable/ic_help_white_18dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:padding="3dp"
+            android:text="@string/send"
+            android:textColor="#fff"
+            android:textStyle="bold" />
+
+
+
+
+
+</LinearLayout>

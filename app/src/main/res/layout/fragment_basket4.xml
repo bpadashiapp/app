@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:fitsSystemWindows="true">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:id="@+id/layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_margin="10dp"
+                android:fillViewport="true"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <ir.tahasystem.music.app.custom.CustomCheckBox
+                        android:id="@+id/reg_chk4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="10dp"
+                        android:button="@null"
+                        android:checked="true"
+                        android:text="@string/peyak_price"
+                        android:textColor="#808080"
+                        android:theme="@style/checkBoxStyle"
+                        android:visibility="gone" />
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/reg_s_peyak_price_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/edt_btn2"
+                        android:gravity="right|bottom"
+                        android:textColor="#fff"
+                        android:textColorHint="#fff"
+                        android:theme="@style/TextLabel">
+
+                        <ir.tahasystem.music.app.custom.EditTextLight
+                            android:id="@+id/reg_s_peyak_price"
+                            style="@style/Text"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/reg_chk4"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_margin="5dp"
+                            android:background="@null"
+                            android:clickable="false"
+                            android:cursorVisible="false"
+                            android:editable="false"
+                            android:ellipsize="start"
+                            android:gravity="right|bottom"
+                            android:hint="@string/peyak_price"
+                            android:inputType="text|textMultiLine"
+                            android:longClickable="false"
+                            android:paddingTop="6dp"
+                            android:scrollHorizontally="false"
+                            android:singleLine="false"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="#fff"
+                            android:textCursorDrawable="@null" />
+                    </android.support.design.widget.TextInputLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <ir.tahasystem.music.app.custom.CustomCheckBox
+                        android:id="@+id/reg_chk5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="10dp"
+                        android:button="@null"
+                        android:checked="true"
+                        android:text="@string/cost_fee"
+                        android:textColor="#808080"
+                        android:theme="@style/checkBoxStyle"
+                        android:visibility="gone" />
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/reg_s_maliyat_fee_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/edt_btn2"
+                        android:gravity="right|bottom"
+                        android:textColor="#fff"
+                        android:textColorHint="#fff"
+                        android:theme="@style/TextLabel">
+
+                        <ir.tahasystem.music.app.custom.EditTextLight
+                            android:id="@+id/reg_s_maliyat_fee"
+                            style="@style/Text"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/reg_chk5"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_margin="5dp"
+                            android:background="@null"
+                            android:clickable="false"
+                            android:cursorVisible="false"
+                            android:editable="false"
+                            android:ellipsize="start"
+                            android:gravity="right|bottom"
+                            android:hint="@string/cost_fee"
+                            android:inputType="text|textMultiLine"
+                            android:longClickable="false"
+                            android:maxLines="4"
+                            android:paddingTop="6dp"
+                            android:scrollHorizontally="false"
+                            android:singleLine="false"
+
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="#fff"
+                            android:textCursorDrawable="@null" />
+
+                    </android.support.design.widget.TextInputLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <ir.tahasystem.music.app.custom.CustomCheckBox
+                        android:id="@+id/reg_chk7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="10dp"
+                        android:button="@null"
+                        android:checked="true"
+                        android:text="@string/service_charge"
+                        android:textColor="#808080"
+                        android:theme="@style/checkBoxStyle"
+                        android:visibility="gone" />
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/reg_s_service_fee_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/edt_btn2"
+                        android:gravity="right|bottom"
+                        android:textColor="#fff"
+                        android:textColorHint="#fff"
+                        android:theme="@style/TextLabel">
+
+                        <ir.tahasystem.music.app.custom.EditTextLight
+                            android:id="@+id/reg_s_service_fee"
+                            style="@style/Text"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/reg_chk7"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_margin="5dp"
+                            android:background="@null"
+                            android:clickable="false"
+                            android:cursorVisible="false"
+                            android:editable="false"
+                            android:ellipsize="start"
+                            android:gravity="right|bottom"
+                            android:hint="@string/service_charge"
+                            android:inputType="text|textMultiLine"
+                            android:longClickable="false"
+                            android:maxLines="4"
+                            android:paddingTop="6dp"
+                            android:scrollHorizontally="false"
+                            android:singleLine="false"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="#fff"
+                            android:textCursorDrawable="@null" />
+
+                    </android.support.design.widget.TextInputLayout>
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/reg_use_boon_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="7dp">
+
+                    <ir.tahasystem.music.app.custom.CustomCheckBox
+                        android:id="@+id/reg_use_boon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="10dp"
+                        android:button="@null"
+                        android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                        android:text="@string/use_boon"
+                        android:textColor="#808080"
+                        android:theme="@style/checkBoxStyle" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp">
+
+                    <ir.tahasystem.music.app.custom.CustomCheckBox
+                        android:id="@+id/reg_chk6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="10dp"
+                        android:button="@null"
+                        android:checked="true"
+                        android:text="@string/description"
+                        android:textColor="#808080"
+                        android:theme="@style/checkBoxStyle"
+                        android:visibility="gone" />
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/edt_btn2"
+                        android:gravity="right|bottom"
+                        android:textColor="#fff"
+                        android:textColorHint="#fff"
+                        android:theme="@style/TextLabel">
+
+                        <ir.tahasystem.music.app.custom.EditTextLight
+                            android:id="@+id/reg_des"
+                            style="@style/Text"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/reg_chk6"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_margin="5dp"
+                            android:background="@null"
+                            android:ellipsize="start"
+                            android:gravity="right|bottom"
+                            android:hint="@string/description"
+                            android:inputType="text|textMultiLine"
+                            android:longClickable="false"
+                            android:maxLines="4"
+                            android:paddingTop="6dp"
+                            android:scrollHorizontally="false"
+                            android:singleLine="false"
+
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="#fff"
+                            android:textCursorDrawable="@null" />
+
+                    </android.support.design.widget.TextInputLayout>
+                </RelativeLayout>
+
+
+                <ir.tahasystem.music.app.custom.TextViewBold
+                    style="@style/Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/pay_type"
+                    android:textColor="#689f38"
+                    android:visibility="gone" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <RadioGroup
+                        android:id="@+id/reg_rg_pay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/reg_rb_in_place"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:checked="true"
+                            android:text="@string/in_place" />
+
+                        <RadioButton
+                            android:id="@+id/reg_rb_pay_online"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:checked="true"
+                            android:text="@string/pay_online" />
+
+                    </RadioGroup>
+
+                </RelativeLayout>
+
+                <ir.tahasystem.music.app.custom.ButtonBold
+                    android:id="@+id/reg_btn"
+                    style="@style/Text"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/bg_btn_selector"
+                    android:drawableLeft="@drawable/buy_icon_btn"
+                    android:padding="5dp"
+                    android:text="@string/submit_and_send"
+                    android:textColor="#fff"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+
+            <FrameLayout
+                android:id="@+id/no_server_response"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffffff"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="30dp"
+                    android:background="#ffffff"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_signal_cellular_connected_no_internet_2_bar_black_24dp" />
+
+                    <ir.tahasystem.music.app.custom.TextViewBold
+                        android:id="@+id/value"
+                        style="@style/Text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"
+                        android:cursorVisible="true"
+                        android:ellipsize="start"
+                        android:gravity="center"
+                        android:text="@string/server_not_response"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+
+                    <ir.tahasystem.music.app.custom.ButtonBold
+                        android:id="@+id/no_server_response_retry"
+                        style="@style/Text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="center"
+                        android:layout_margin="20dp"
+                        android:background="@drawable/bg_btn_selector"
+                        android:drawableRight="@drawable/ic_refresh_white_24dp"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:text="@string/retry"
+                        android:textColor="#fff"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+            </FrameLayout>
+        </FrameLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <com.gc.materialdesign.views.ProgressBarIndeterminate
+        android:id="@+id/list_load"
+        android:layout_width="fill_parent"
+        android:layout_height="5dp"
+        android:layout_gravity="top"
+        android:background="@color/color_primary" />
+
+</RelativeLayout>

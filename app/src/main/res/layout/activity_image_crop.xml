@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary">
+
+            <ir.tahasystem.music.app.custom.TextViewBold style="@style/Text"
+                android:id="@+id/toolbar_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="1dp"
+                android:ellipsize="end"
+                android:gravity="center|right"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                android:textColor="#fff"
+                android:textStyle="bold" />
+
+        </android.support.v7.widget.Toolbar>
+
+        <LinearLayout
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#000"
+                android:fitsSystemWindows="true">
+
+                <ir.tahasystem.music.app.custom.ButtonLight style="@style/Text"
+                    android:id="@+id/save"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center"
+                    android:layout_margin="20dp"
+                    android:background="@drawable/bg_btn_selector"
+                    android:drawableLeft="@drawable/ic_payment_white_24dp"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:padding="7dp"
+                    android:text="@string/save"
+                    android:textColor="#fff"
+                    android:textStyle="bold" />
+
+
+                <com.theartofdev.edmodo.cropper.CropImageView
+                    android:id="@+id/cropImageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@id/save" />
+
+                <FrameLayout
+                    android:id="@+id/no_server_response"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#ffffff"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="30dp"
+                        android:background="#ffffff"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_signal_cellular_connected_no_internet_2_bar_black_24dp" />
+
+                        <ir.tahasystem.music.app.custom.TextViewBold style="@style/Text"
+                            android:id="@+id/value"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="10dp"
+                            android:cursorVisible="true"
+                            android:ellipsize="start"
+                            android:gravity="center"
+                            android:text="@string/server_not_response"
+                            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+
+                        <ir.tahasystem.music.app.custom.ButtonBold style="@style/Text"
+                            android:id="@+id/no_server_response_retry"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_gravity="center"
+                            android:layout_margin="20dp"
+                            android:background="@drawable/bg_btn_selector"
+                            android:drawableRight="@drawable/ic_refresh_white_24dp"
+                            android:ellipsize="end"
+                            android:gravity="center"
+                            android:padding="3dp"
+                            android:text="@string/retry"
+                            android:textColor="#fff"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </FrameLayout>
+
+                <com.gc.materialdesign.views.ProgressBarIndeterminate
+                    android:id="@+id/list_load"
+                    android:layout_width="fill_parent"
+                    android:layout_height="5dp"
+                    android:layout_gravity="top"
+                    android:background="@color/color_primary" />
+
+
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
